@@ -20,7 +20,7 @@ public class spawnObjectOnPlane : MonoBehaviour
         raycastManager = GetComponent<ARRaycastManager>();
     }
 
-    //where the user is pressing on the screen
+    //check if the user is pressing the screen
     bool TryGetTouchPosition(out Vector2 touchPosition)
     {
         //valid touch
@@ -67,4 +67,6 @@ public class spawnObjectOnPlane : MonoBehaviour
             }
         }
     }
+
+    
 }
