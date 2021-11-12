@@ -56,7 +56,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/FaceTracking/EyeLasers.unity
     guid: c8ca2b95503fe4a7194f37bfbe5e4688
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FaceTracking/EyePoses.unity
     guid: 19344822e252a420e94db72338383cbc
   - enabled: 0
@@ -128,6 +128,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SimpleAR/SimpleAR.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/PlaneDetection.unity
+    guid: d8a2b7956550e234b88caa2a549c2ce8
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}

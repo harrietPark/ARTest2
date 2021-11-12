@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/04 - Moving Smoothly/Lerp/Lerp.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
