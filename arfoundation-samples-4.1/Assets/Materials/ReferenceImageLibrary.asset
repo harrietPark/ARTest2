@@ -19,9 +19,19 @@ MonoBehaviour:
       m_GuidLow: 5659238019850463039
       m_GuidHigh: 13322906354717256377
     m_SerializedTextureGuid:
-      m_GuidLow: 14138141045083469126
-      m_GuidHigh: 13651874930102190809
-    m_Size: {x: 0.075, y: 0.1}
+      m_GuidLow: 1604540582475702903
+      m_GuidHigh: 4756799775901847320
+    m_Size: {x: 0.075, y: 0.20478542}
     m_SpecifySize: 1
-    m_Name: c3.jpg
+    m_Name: Cube
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5076601062547434367
+      m_GuidHigh: 16283638847578236595
+    m_SerializedTextureGuid:
+      m_GuidLow: 17353689474345000088
+      m_GuidHigh: 9265723361826992569
+    m_Size: {x: 0.13084416, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Sphere
     m_Texture: {fileID: 0}
