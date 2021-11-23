@@ -7,15 +7,17 @@ using UnityEngine.XR.ARFoundation;
 public class ARTrackedImg : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
-    public List<GameObject> objectList = new List<GameObject>();
-    private Dictionary<string, GameObject> prefabDic = new Dictionary<string, GameObject>();
+    [SerializeField]
+    private GameObject[] placeablePrefabs;
+    private Dictionary<string, GameObject> spawnedPrefabs = new Dictionary<string, GameObject>();
 
     private void Awake()
     {
-        foreach (GameObject obj in objectList)
+        foreach (GameObject prefab in placeablePrefabs)
         {
-            string tName = obj.name;
-            prefabDic.Add(tName, obj);
+            GameObject newPrefab = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+            newPrefab.name = prefab.name;
+            spawnedPrefabs.Add(newPrefab.name, newPrefab);
         }
     }
 
@@ -38,14 +40,27 @@ public class ARTrackedImg : MonoBehaviour
         {
             UpdateImage(trackedImage);
         }
+        foreach (ARTrackedImage trackedImage in eventArgs.removed)
+        {
+            spawnedPrefabs[trackedImage.name].SetActive(false);
+        }
     }
 
     private void UpdateImage(ARTrackedImage trackedImage)
     {
         string name = trackedImage.referenceImage.name;
-        GameObject tObj = prefabDic[name];
-        tObj.transform.position = trackedImage.transform.position;
-        tObj.transform.rotation = trackedImage.transform.rotation;
-        tObj.SetActive(true);
+        Vector3 position = trackedImage.transform.position;
+
+        GameObject prefab = spawnedPrefabs[name];
+        prefab.transform.position = position;
+        prefab.SetActive(true);
+
+        foreach (GameObject go in spawnedPrefabs.Values)
+        {
+            if (go.name != name)
+            {
+                go.SetActive(false);
+            }
+        }
     }
 }
