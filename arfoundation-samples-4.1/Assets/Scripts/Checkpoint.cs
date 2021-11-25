@@ -21,6 +21,7 @@ public class Checkpoint : MonoBehaviour
 
     [Header("Order of Checkpoints")]
     public GameObject next;
+    public Transform next_location;
 
     private void Start()
     {
@@ -52,8 +53,8 @@ public class Checkpoint : MonoBehaviour
 
         if (next != null)
         {
-           next.gameObject.transform.position = displayObj.transform.position;
-           next.gameObject.transform.rotation = displayObj.transform.rotation;
+            next.gameObject.transform.position = next_location.position;
+          // next.gameObject.transform.rotation = displayObj.transform.rotation;
            next.gameObject.SetActive(true);
         }
 
