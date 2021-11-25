@@ -58,4 +58,6 @@ public class Checkpoint : MonoBehaviour
         this.gameObject.SetActive(false); // maybe we want to leave old clues up in case people need to go back?
     }
 
+   
+
 }
