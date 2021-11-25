@@ -10,13 +10,13 @@ public class Letter : Interactable
 
     public GameObject letter;
 
-    private bool isTouched = false;
+   // private bool isTouched = false;
 
     public override void OnTouch()
     {
         this.gameObject.SetActive(false);
         letter.SetActive(true);
-        isTouched = true;
+        //isTouched = true;
     }
 
 }

@@ -52,8 +52,8 @@ public class Checkpoint : MonoBehaviour
 
         if (next != null)
         {
-            next.gameObject.transform.position = imagePosition;
-            next.gameObject.transform.rotation = Quaternion.identity;
+           // next.gameObject.transform.position = imagePosition;
+           // next.gameObject.transform.rotation = Quaternion.identity;
             next.gameObject.SetActive(true);
         }
 
