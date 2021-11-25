@@ -49,8 +49,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""739c9c2b-7ce1-4621-a422-279855afd0f0"",
-                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""id"": ""320c51d1-66cc-40bb-9450-81a3ffc6c7ca"",
+                    ""path"": ""<Touchscreen>/primaryTouch/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

@@ -23,5 +23,5 @@ MonoBehaviour:
       m_GuidHigh: 9265723361826992569
     m_Size: {x: 0.13084416, y: 0.1}
     m_SpecifySize: 1
-    m_Name: Envelope_clue
+    m_Name: Envelope
     m_Texture: {fileID: 0}
