@@ -156,13 +156,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4288000622976301157}
   - component: {fileID: 4325901662239113766}
+  - component: {fileID: 3156592754779885281}
   m_Layer: 0
   m_Name: Letter1_instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4288000622976301157
 Transform:
   m_ObjectHideFlags: 0
@@ -172,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 3515580083149972191}
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1128566900218853224}
   - {fileID: 3728742297215846841}
@@ -198,6 +199,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3156592754779885281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515580083149972191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26855767, y: 0.18088497, z: 0.3023216}
+  m_Center: {x: 0.006473442, y: 0.04452374, z: -0.010486935}
 --- !u!1 &4389820694951074119
 GameObject:
   m_ObjectHideFlags: 0

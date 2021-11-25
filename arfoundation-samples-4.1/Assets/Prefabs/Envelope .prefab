@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 5432119220363577149}
   - component: {fileID: 5541814422988535155}
   - component: {fileID: 6149510293832626844}
+  - component: {fileID: 4931905460913685752}
   m_Layer: 0
   m_Name: 'Envelope '
   m_TagString: Untagged
@@ -189,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 4623247429933178247}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 6934152843126327855}
   - {fileID: 489164611843043030}
@@ -229,6 +230,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: 
+--- !u!65 &4931905460913685752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623247429933178247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08454385, y: 0.07194651, z: 0.07909622}
+  m_Center: {x: -0.0020197928, y: -0.030199602, z: 0.0056467834}
 --- !u!1 &6482353183062318156
 GameObject:
   m_ObjectHideFlags: 0
