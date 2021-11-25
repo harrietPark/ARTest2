@@ -172,7 +172,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5432119220363577149}
   - component: {fileID: 5541814422988535155}
-  - component: {fileID: 6149510293832626844}
   - component: {fileID: 4931905460913685752}
   m_Layer: 0
   m_Name: 'Envelope '
@@ -217,19 +216,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6149510293832626844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4623247429933178247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afbcdab31daee14facb32c1aaab22b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: 
 --- !u!65 &4931905460913685752
 BoxCollider:
   m_ObjectHideFlags: 0
