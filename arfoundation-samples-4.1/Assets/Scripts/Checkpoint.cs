@@ -52,9 +52,9 @@ public class Checkpoint : MonoBehaviour
 
         if (next != null)
         {
-           // next.gameObject.transform.position = imagePosition;
-           // next.gameObject.transform.rotation = Quaternion.identity;
-            next.gameObject.SetActive(true);
+           next.gameObject.transform.position = displayObj.transform.position;
+           next.gameObject.transform.rotation = displayObj.transform.rotation;
+           next.gameObject.SetActive(true);
         }
 
         this.gameObject.SetActive(false); // maybe we want to leave old clues up in case people need to go back?
