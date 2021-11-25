@@ -20,7 +20,7 @@ public class Checkpoint : MonoBehaviour
     public float longitude;
 
     [Header("Order of Checkpoints")]
-    public Checkpoint next;
+    public GameObject next;
 
     private void Start()
     {
