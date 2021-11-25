@@ -1043,7 +1043,7 @@ MonoBehaviour:
   displayObj: {fileID: 2104832852}
   latitude: 0
   longitude: 0
-  next: {fileID: 919132148369916491}
+  next: {fileID: 1221589633}
   next_location: {fileID: 1844069997}
 --- !u!4 &1864447303
 Transform:
@@ -1465,12 +1465,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446916, guid: 303fa73578986ac4a82283eeb1edc654,
     type: 3}
   m_PrefabInstance: {fileID: 655334870119293187}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &919132148369916491 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 283430228442913002, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1094264325331851937}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &919132148369916495 stripped
 Transform:
