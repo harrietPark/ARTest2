@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 8435254915095294212}
   m_Layer: 0
   m_Name: Envelope_clue
-  m_TagString: Untagged
+  m_TagString: envelope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

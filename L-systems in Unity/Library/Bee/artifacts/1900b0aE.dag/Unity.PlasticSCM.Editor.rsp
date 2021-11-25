@@ -307,6 +307,7 @@
 -r:"C:/Users/USER/Desktop/2021.1.21f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"C:/Users/USER/Desktop/2021.1.21f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
 -r:"C:/Users/USER/Desktop/2021.1.21f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Users/USER/Desktop/2021.1.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"C:/Users/USER/Desktop/2021.1.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"C:/Users/USER/Documents/GitHub/ARTest/L-systems in Unity/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"C:/Users/USER/Documents/GitHub/ARTest/L-systems in Unity/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/unityplastic.dll"
