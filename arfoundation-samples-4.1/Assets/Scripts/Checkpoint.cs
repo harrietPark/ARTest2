@@ -52,6 +52,7 @@ public class Checkpoint : MonoBehaviour
 
         if (next != null)
         {
+            next.gameObject.transform.position = imagePosition;
             next.gameObject.SetActive(true);
         }
 

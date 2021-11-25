@@ -283,7 +283,7 @@ PrefabInstance:
     - target: {fileID: 3515580083149972191, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4288000622976301157, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
         type: 3}
@@ -313,12 +313,12 @@ PrefabInstance:
     - target: {fileID: 4288000622976301157, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.093
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4288000622976301157, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4288000622976301157, guid: 2fd2ddc9b31b04641a47836bdda86c1e,
         type: 3}
@@ -651,7 +651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1293003445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1026,6 +1026,7 @@ GameObject:
   - component: {fileID: 1884807480}
   - component: {fileID: 1884807479}
   - component: {fileID: 1884807478}
+  - component: {fileID: 1884807481}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1096,7 +1097,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1884807479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884807481}
+        m_TargetAssemblyTypeName: UIButton, Assembly-CSharp
+        m_MethodName: OnTouch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1884807479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,6 +1148,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884807476}
   m_CullTransparentMesh: 1
+--- !u!114 &1884807481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884807476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40210fdd69c71b447ae4e7ee0029e3fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Button Touched
+  letter: {fileID: 1293003444}
 --- !u!1 &2137404063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 4623247429933178247, guid: 9deba19457a2b5b43accd4f9e9cbe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5432119220363577149, guid: 9deba19457a2b5b43accd4f9e9cbe333,
         type: 3}
