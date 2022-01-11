@@ -81,7 +81,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/1. PlaneDetection.unity
+    path: Assets/Scenes/ARPortal.unity
     guid: bf57245d7f89c8d42b5f7d520c74af12
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
