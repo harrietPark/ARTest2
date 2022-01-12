@@ -21,21 +21,31 @@ public class ARTapToPlaceObject : MonoBehaviour
 
     private bool TryGetTouchPosition(out Vector2 touchPos)
     {
-        if (Input.touchCount >= 0)
+        if (Input.touchCount > 0)
         {
             touchPos = Input.GetTouch(index: 0).position;
+            Debug.Log("is touched");
             return true;
         }
-        touchPos = default;
-        return false;
+        else
+        {
+            touchPos = default;
+            return false;
+        }
+        
     }
     
     void Update()
     {
-        if (!TryGetTouchPosition(out Vector2 touchPos)) return;
+        if (!TryGetTouchPosition(out Vector2 touchPos))
+        {
+            Debug.Log("no touch detected");
+            return;
+        }
         if (arRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
             var hitPose = hits[0].pose;
+            
 
             if(spawnedObject == null)
             {
