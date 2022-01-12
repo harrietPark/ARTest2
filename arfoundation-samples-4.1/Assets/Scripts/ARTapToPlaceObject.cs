@@ -24,7 +24,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (Input.touchCount > 0)
         {
             touchPos = Input.GetTouch(index: 0).position;
-            Debug.Log("is touched");
+            //Debug.Log("is touched");
             return true;
         }
         else
@@ -39,7 +39,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         if (!TryGetTouchPosition(out Vector2 touchPos))
         {
-            Debug.Log("no touch detected");
+            //Debug.Log("no touch detected");
             return;
         }
         if (arRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
