@@ -425,7 +425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203422026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.33, y: 0.71, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1590120344}
@@ -503,7 +503,6 @@ GameObject:
   - component: {fileID: 1590120345}
   - component: {fileID: 1590120346}
   - component: {fileID: 1590120347}
-  - component: {fileID: 1590120348}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -566,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3859fdc9ab3de2542a83994b3c9c04e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToInstantiate: {fileID: 1368208541081079463, guid: e0b7376feff26d94da9fb5624dc1362e,
+  gameObjectToInstantiate: {fileID: 1905572730950859773, guid: ff8d458d757a8ca4389f95aee518d5a7,
     type: 3}
 --- !u!114 &1590120347
 MonoBehaviour:
@@ -581,20 +580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastPrefab: {fileID: 0}
---- !u!114 &1590120348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590120342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 2851872490120427675, guid: a3e44cdada5c2d74a8e322f30f6e7ad5,
-    type: 3}
 --- !u!1 &1935532391
 GameObject:
   m_ObjectHideFlags: 0
