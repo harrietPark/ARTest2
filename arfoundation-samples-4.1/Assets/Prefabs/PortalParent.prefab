@@ -6678,6 +6678,7 @@ MonoBehaviour:
   DoorAnim: {fileID: 1232218868630527841}
   batAnim: {fileID: 0}
   batParticle: {fileID: 0}
+  bat: {fileID: 0}
 --- !u!1 &1232218868736625429
 GameObject:
   m_ObjectHideFlags: 0

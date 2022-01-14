@@ -24,7 +24,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (Input.touchCount > 0)
         {
             touchPos = Input.GetTouch(index: 0).position;
-            //Debug.Log("is touched");
+            Debug.Log("is touched");
             return true;
         }
         else
@@ -39,23 +39,23 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         if (!TryGetTouchPosition(out Vector2 touchPos))
         {
-            //Debug.Log("no touch detected");
+            Debug.Log("no touch detected");
             return;
         }
         if (arRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
-            var hitPose = hits[0].pose;
-            
+            //var hitPose = hits[0].pose;
 
             if(spawnedObject == null)
             {
-                spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, gameObjectToInstantiate.transform.rotation);
+                gameObjectToInstantiate.SetActive(true);
+                Debug.Log("gameObject set Active");
             }
-            else
-            {
+            //else
+            //{
                 //if there's object already, then can move around
-                spawnedObject.transform.position = hitPose.position;
-            }
+               // spawnedObject.transform.position = hitPose.position;
+            //}
         }
     }
 }

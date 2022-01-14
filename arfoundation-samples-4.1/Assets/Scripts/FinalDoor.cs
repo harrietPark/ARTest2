@@ -7,6 +7,7 @@ public class FinalDoor : Interactable
     public Animator DoorAnim;
     public Animator batAnim;
     public GameObject batParticle;
+    public GameObject bat;
     public override void OnTouch()
     {
         if (GoblinBat.gotBat)
@@ -22,5 +23,11 @@ public class FinalDoor : Interactable
         batParticle.SetActive(true);
         yield return new WaitForSeconds(0.6f);
         DoorAnim.SetTrigger("isOpened");
+        StartCoroutine(BatDisapper());
+    }
+    private IEnumerator BatDisapper()
+    {
+        yield return new WaitForSeconds(1.5f);
+        bat.SetActive(false);
     }
 }
