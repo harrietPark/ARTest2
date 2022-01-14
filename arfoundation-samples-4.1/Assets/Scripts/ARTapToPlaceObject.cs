@@ -49,7 +49,7 @@ public class ARTapToPlaceObject : MonoBehaviour
 
             if(spawnedObject == null)
             {
-                spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
+                spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, gameObjectToInstantiate.transform.rotation);
             }
             else
             {
