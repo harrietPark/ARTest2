@@ -34,6 +34,7 @@ public class DoorInstantiate : MonoBehaviour
         {
             doorAnimator.enabled = true;
             arPlaneManager.enabled = false;
+            arPlaneManager.planePrefab.SetActive(false);
             tapToPlaceObject.enabled = false;
             
         }

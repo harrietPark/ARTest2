@@ -9,6 +9,7 @@ public class Broom : Interactable
     public GameObject broom;
     public GameObject goblinBat;
     public GameObject goblinLetter;
+    public GameObject glassCanvas;
     private bool isTouched = false;
 
     public override void OnTouch()
@@ -16,6 +17,7 @@ public class Broom : Interactable
         isTouched = true;
         if (isTouched)
         {
+            glassCanvas.SetActive(false);
             broomParticle.SetActive(false);
             StartCoroutine(ActiveGoblinBat());
         }
