@@ -11,6 +11,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     private GameObject spawnedObject;
     private ARRaycastManager arRaycastManager;
     private Vector2 touchPos; //where we tap on the screen
+    public GameObject ARCamera;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -44,18 +45,29 @@ public class ARTapToPlaceObject : MonoBehaviour
         }
         if (arRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
-            //var hitPose = hits[0].pose;
+            var hitPose = hits[0].pose;
 
             if(spawnedObject == null)
             {
-                gameObjectToInstantiate.SetActive(true);
+                //gameObjectToInstantiate.SetActive(true);
+                //spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
                 Debug.Log("gameObject set Active");
+
+                
+
+                gameObjectToInstantiate.transform.position = hitPose.position;
+                gameObjectToInstantiate.transform.rotation = hitPose.rotation;
+
+                Vector3 cameraPosition = ARCamera.transform.position;
+                cameraPosition.y = hitPose.position.y;
+                spawnedObject.transform.LookAt(cameraPosition, gameObjectToInstantiate.transform.up);
+                gameObjectToInstantiate.SetActive(true);
             }
-            //else
-            //{
+            else
+            {
                 //if there's object already, then can move around
-               // spawnedObject.transform.position = hitPose.position;
-            //}
+                gameObjectToInstantiate.transform.position = hitPose.position;
+            }
         }
     }
 }
