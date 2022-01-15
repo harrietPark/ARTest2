@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARTapToPlaceObject : MonoBehaviour
 {
@@ -13,11 +14,29 @@ public class ARTapToPlaceObject : MonoBehaviour
     private Vector2 touchPos; //where we tap on the screen
     public GameObject ARCamera;
 
+    public GameObject planeUI;
+    public GameObject tapUI;
+
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Awake()
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
+    }
+
+    private void Start()
+    {
+        StartCoroutine(UIControl());
+    }
+
+    private IEnumerator UIControl()
+    {
+        yield return new WaitForSeconds(0.6f);
+        planeUI.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        planeUI.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        tapUI.SetActive(true);
     }
 
     private bool TryGetTouchPosition(out Vector2 touchPos)
@@ -46,6 +65,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (arRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
             var hitPose = hits[0].pose;
+            tapUI.SetActive(false);
 
             if(spawnedObject == null)
             {
@@ -59,7 +79,7 @@ public class ARTapToPlaceObject : MonoBehaviour
                 Vector3 cameraPosition = ARCamera.transform.position;
                 cameraPosition.y = hitPose.position.y;
                 gameObjectToInstantiate.transform.LookAt(cameraPosition, gameObjectToInstantiate.transform.up);
-               gameObjectToInstantiate.SetActive(true);
+                gameObjectToInstantiate.SetActive(true);
             }
             else
             {
