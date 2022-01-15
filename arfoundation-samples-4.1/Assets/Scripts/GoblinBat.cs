@@ -8,6 +8,7 @@ public class GoblinBat : Interactable
     public GameObject bat;
     public GameObject thisBat;
     public static bool gotBat = false;
+    public GameObject batInstruction;
 
     public override void OnTouch()
     {
@@ -18,6 +19,7 @@ public class GoblinBat : Interactable
             thisBat.SetActive(false);
             isTouched = false;
             gotBat = true;
+            batInstruction.SetActive(true);
         }
     }
 }
