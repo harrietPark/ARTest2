@@ -13,7 +13,7 @@ public class Glass : Interactable
     {
         Debug.Log("glass touched");
         glassParticle.SetActive(true);
-        glassParticle.GetComponentInChildren<ParticleSystem>().Play();
+        //glassParticle.GetComponentInChildren<ParticleSystem>().Play();
         
         StartCoroutine(GlassEffect());
     }
@@ -26,6 +26,7 @@ public class Glass : Interactable
         shelfAnim.SetBool("isClosed", true);
         yield return new WaitForSeconds(1.4f);
         glassEffect.SetActive(true);
+        yield return new WaitForSeconds(1.3f);
         broomParticle.SetActive(true);
     }
 }

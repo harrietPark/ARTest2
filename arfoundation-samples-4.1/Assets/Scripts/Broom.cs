@@ -17,8 +17,8 @@ public class Broom : Interactable
         isTouched = true;
         if (isTouched)
         {
-            glassCanvas.SetActive(false);
-            broomParticle.SetActive(false);
+            
+            
             StartCoroutine(ActiveGoblinBat());
         }
         
@@ -26,15 +26,13 @@ public class Broom : Interactable
 
     private IEnumerator ActiveGoblinBat()
     {
-        yield return new WaitForSeconds(0.9f);
-        broomDisappearParticle.SetActive(true);
-        broomDisappearParticle.GetComponentInChildren<ParticleSystem>().Play();
-        //yield return new WaitForSeconds(0.5f);
-        Destroy(broomDisappearParticle);
         yield return new WaitForSeconds(0.5f);
+        glassCanvas.SetActive(false);
+        broomParticle.SetActive(false);
+        broomDisappearParticle.SetActive(true);
+        yield return new WaitForSeconds(0.6f);
         broom.SetActive(false);
-        StartCoroutine(ActiveGoblinBat());
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(0.5f);
         goblinBat.SetActive(true);
         goblinLetter.SetActive(true);
         isTouched = false;
