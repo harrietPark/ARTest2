@@ -24,9 +24,9 @@ public class Glass : Interactable
         glass.SetActive(false);
         yield return new WaitForSeconds(0.6f);
         shelfAnim.SetBool("isClosed", true);
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(1.6f);
         glassEffect.SetActive(true);
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(1.6f);
         broomParticle.SetActive(true);
     }
 }

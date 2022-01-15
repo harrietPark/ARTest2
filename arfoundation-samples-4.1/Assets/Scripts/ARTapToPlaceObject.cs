@@ -33,7 +33,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         yield return new WaitForSeconds(0.6f);
         planeUI.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(6f);
         planeUI.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         tapUI.SetActive(true);
