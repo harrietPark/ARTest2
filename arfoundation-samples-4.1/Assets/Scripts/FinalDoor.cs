@@ -8,6 +8,8 @@ public class FinalDoor : Interactable
     public Animator batAnim;
     public GameObject batParticle;
     public GameObject bat;
+
+  
     public override void OnTouch()
     {
         if (GoblinBat.gotBat)

@@ -52,14 +52,14 @@ public class ARTapToPlaceObject : MonoBehaviour
                 //gameObjectToInstantiate.SetActive(true);
                 //spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
                 Debug.Log("gameObject set Active");
-                gameObjectToInstantiate.SetActive(true);
+                
                 gameObjectToInstantiate.transform.position = hitPose.position;
                 gameObjectToInstantiate.transform.rotation = hitPose.rotation;
 
                 Vector3 cameraPosition = ARCamera.transform.position;
                 cameraPosition.y = hitPose.position.y;
                 gameObjectToInstantiate.transform.LookAt(cameraPosition, gameObjectToInstantiate.transform.up);
-                
+               gameObjectToInstantiate.SetActive(true);
             }
             else
             {
